@@ -1,0 +1,58 @@
+site_name: CERMAS Docs
+site_url: https://example.com
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.tabs.link
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+repo_url: https://github.com/cermas/cermas-mkdocs
+repo_name: cermas-documentation
+nav:
+  - Home: index.md
+  - Installation: CASTEP/Installation.md
+markdown_extensions:
+  - admonition
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+plugins:
+  - search
+  # uncomment if you want blog or tags later:
+  # - blog
+  # - tags
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-org
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/your-handle
+  version:
+    provider: mike
