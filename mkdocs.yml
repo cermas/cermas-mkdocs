@@ -29,9 +29,14 @@ theme:
     repo: fontawesome/brands/github
 repo_url: https://github.com/cermas/cermas-mkdocs
 repo_name: cermas-documentation
+
 nav:
   - Home: index.md
-  - Installation: CASTEP/Installation.md
+  - DFT:
+    - CASTEP: DFT/Installation.md
+    - Python Runner: DFT/Python Runner.md
+
+
 markdown_extensions:
   - admonition
   - attr_list
