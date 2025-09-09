@@ -1,5 +1,5 @@
 site_name: CERMAS Docs
-site_url: https://example.com
+site_url: https://cermas.github.io/cermas-mkdocs/
 theme:
   name: material
   language: en
@@ -51,6 +51,8 @@ markdown_extensions:
       alternate_style: true
 plugins:
   - search
+  - mike
+
   # uncomment if you want blog or tags later:
   # - blog
   # - tags
@@ -62,3 +64,4 @@ extra:
       link: https://twitter.com/your-handle
   version:
     provider: mike
+    default : latest
