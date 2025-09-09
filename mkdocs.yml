@@ -33,7 +33,8 @@ repo_name: cermas-documentation
 nav:
   - Home: index.md
   - DFT:
-    - CASTEP: DFT/Installation.md
+    - CASTEP with AOCL: DFT/Installation CASTEP - AOCL.md
+    - CASTEP with MKL: DFT/Installation CASTEP - MKL.md
     - Python Runner: DFT/Python Runner.md
 
 

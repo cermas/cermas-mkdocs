@@ -1,4 +1,4 @@
-# Installation
+# Installation CASTEP - AOCL
 ## CASTEP 25.12 + AOCL (Ubuntu 24.04, Ryzen 3900X) — Guia Final
 
 ### 0) Pré-requisitos
