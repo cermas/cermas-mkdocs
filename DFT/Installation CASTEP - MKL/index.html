@@ -8,19 +8,21 @@
       
       
       
-        <link rel="canonical" href="https://example.com/CASTEP/Installation/">
+        <link rel="canonical" href="https://example.com/DFT/Installation%20CASTEP%20-%20MKL/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../Installation%20CASTEP%20-%20AOCL/">
       
+      
+        <link rel="next" href="../Python%20Runner/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
     
     
       
-        <title>Installation - CERMAS Docs</title>
+        <title>CASTEP with MKL - CERMAS Docs</title>
       
     
     
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#castep-2512-aocl-ubuntu-2404-ryzen-3900x-guia-final" class="md-skip">
+        <a href="#installation-castep-mkl" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installation
+              CASTEP with MKL
             
           </span>
         </div>
@@ -243,17 +245,18 @@
     
   
   
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
-        
-  
-  
     
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Installation%20CASTEP%20-%20AOCL/" class="md-tabs__link">
+          
   
-  Installation
+  
+  DFT
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -332,10 +335,83 @@
   
   
   
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    DFT
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            DFT
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Installation%20CASTEP%20-%20AOCL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CASTEP with AOCL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
+      
+        
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
@@ -343,7 +419,7 @@
   
   
   <span class="md-ellipsis">
-    Installation
+    CASTEP with MKL
     
   </span>
   
@@ -356,7 +432,7 @@
   
   
   <span class="md-ellipsis">
-    Installation
+    CASTEP with MKL
     
   </span>
   
@@ -369,6 +445,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -377,122 +455,129 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#castep-2512-aocl-ubuntu-2404-ryzen-3900x-guia-final" class="md-nav__link">
+  <a href="#castep-2512-intel-mkl-openmpi-on-ubuntu-2404" class="md-nav__link">
     <span class="md-ellipsis">
-      CASTEP 25.12 + AOCL (Ubuntu 24.04, Ryzen 3900X) — Guia Final
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="CASTEP 25.12 + AOCL (Ubuntu 24.04, Ryzen 3900X) — Guia Final">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#0-pre-requisitos" class="md-nav__link">
-    <span class="md-ellipsis">
-      0) Pré-requisitos
+      CASTEP 25.12 + Intel MKL + OpenMPI on Ubuntu 24.04
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#1-definir-aocl-e-diretorios-de-biblioteca" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#system-information" class="md-nav__link">
     <span class="md-ellipsis">
-      1) Definir AOCL e diretórios de biblioteca
+      System Information
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#2-ajustar-symlinks-das-libs-aocl-uma-vez-so" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      2) Ajustar symlinks das libs AOCL (uma vez só)
+      Prerequisites
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#3-descompactar-o-castep" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#locating-mkl-libraries" class="md-nav__link">
     <span class="md-ellipsis">
-      3) Descompactar o CASTEP
+      Locating MKL Libraries
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#4-compilar-serial-e-mpi-com-aocl-fftw3" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#environment-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      4) Compilar (serial e MPI) com AOCL + FFTW3
+      Environment Setup
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#5-verificar-linkedicao-com-aocl" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#building-castep" class="md-nav__link">
     <span class="md-ellipsis">
-      5) Verificar linkedição com AOCL
+      Building CASTEP
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#6-teste-rapido-mpi" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#mpi-build-with-mkl" class="md-nav__link">
     <span class="md-ellipsis">
-      6) Teste rápido (MPI)
+      MPI build with MKL
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#7-persistir-ambiente-no-bashrc" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#verifying-installation" class="md-nav__link">
     <span class="md-ellipsis">
-      7) Persistir ambiente no ~/.bashrc
+      Verifying installation
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#8-wrapper-para-simplificar-mpirun-np-castepmpi" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#wrapper-script" class="md-nav__link">
     <span class="md-ellipsis">
-      8) Wrapper para simplificar mpirun -np ... castep.mpi
+      Wrapper Script
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#9-duvidas-comuns-troubleshooting" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#troubleshoting" class="md-nav__link">
     <span class="md-ellipsis">
-      9) Dúvidas comuns / Troubleshooting
+      Troubleshoting
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#10-exemplo-final-de-execucao" class="md-nav__link">
-    <span class="md-ellipsis">
-      10) Exemplo final de execução
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
     </ul>
   
 </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Python%20Runner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python Runner
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -515,6 +600,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -523,116 +610,92 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#castep-2512-aocl-ubuntu-2404-ryzen-3900x-guia-final" class="md-nav__link">
+  <a href="#castep-2512-intel-mkl-openmpi-on-ubuntu-2404" class="md-nav__link">
     <span class="md-ellipsis">
-      CASTEP 25.12 + AOCL (Ubuntu 24.04, Ryzen 3900X) — Guia Final
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="CASTEP 25.12 + AOCL (Ubuntu 24.04, Ryzen 3900X) — Guia Final">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#0-pre-requisitos" class="md-nav__link">
-    <span class="md-ellipsis">
-      0) Pré-requisitos
+      CASTEP 25.12 + Intel MKL + OpenMPI on Ubuntu 24.04
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#1-definir-aocl-e-diretorios-de-biblioteca" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#system-information" class="md-nav__link">
     <span class="md-ellipsis">
-      1) Definir AOCL e diretórios de biblioteca
+      System Information
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#2-ajustar-symlinks-das-libs-aocl-uma-vez-so" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      2) Ajustar symlinks das libs AOCL (uma vez só)
+      Prerequisites
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#3-descompactar-o-castep" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#locating-mkl-libraries" class="md-nav__link">
     <span class="md-ellipsis">
-      3) Descompactar o CASTEP
+      Locating MKL Libraries
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#4-compilar-serial-e-mpi-com-aocl-fftw3" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#environment-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      4) Compilar (serial e MPI) com AOCL + FFTW3
+      Environment Setup
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#5-verificar-linkedicao-com-aocl" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#building-castep" class="md-nav__link">
     <span class="md-ellipsis">
-      5) Verificar linkedição com AOCL
+      Building CASTEP
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#6-teste-rapido-mpi" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#mpi-build-with-mkl" class="md-nav__link">
     <span class="md-ellipsis">
-      6) Teste rápido (MPI)
+      MPI build with MKL
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#7-persistir-ambiente-no-bashrc" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#verifying-installation" class="md-nav__link">
     <span class="md-ellipsis">
-      7) Persistir ambiente no ~/.bashrc
+      Verifying installation
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#8-wrapper-para-simplificar-mpirun-np-castepmpi" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#wrapper-script" class="md-nav__link">
     <span class="md-ellipsis">
-      8) Wrapper para simplificar mpirun -np ... castep.mpi
+      Wrapper Script
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#9-duvidas-comuns-troubleshooting" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#troubleshoting" class="md-nav__link">
     <span class="md-ellipsis">
-      9) Dúvidas comuns / Troubleshooting
+      Troubleshoting
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#10-exemplo-final-de-execucao" class="md-nav__link">
-    <span class="md-ellipsis">
-      10) Exemplo final de execução
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -655,139 +718,101 @@
   
 
 
-  <h1>Installation</h1>
+<h1 id="installation-castep-mkl">Installation CASTEP - MKL<a class="headerlink" href="#installation-castep-mkl" title="Permanent link">&para;</a></h1>
+<h2 id="castep-2512-intel-mkl-openmpi-on-ubuntu-2404">CASTEP 25.12 + Intel MKL + OpenMPI on Ubuntu 24.04<a class="headerlink" href="#castep-2512-intel-mkl-openmpi-on-ubuntu-2404" title="Permanent link">&para;</a></h2>
+<p>This guide explains how to install and run <strong>CASTEP 25.12</strong> with <strong>Intel MKL</strong> and <strong>OpenMPI</strong> on Ubuntu 24.04.</p>
+<hr />
+<h2 id="system-information">System Information<a class="headerlink" href="#system-information" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>CPU</strong>: <code>Intel Core i9</code> (24 cores / 32 threads)</li>
+<li><strong>RAM</strong>: <code>128 GB</code></li>
+<li><strong>OS</strong>: <code>Ubuntu 24.04 LTS</code></li>
+<li><strong>Compilers</strong>: <code>GNU Fortran 13.x</code></li>
+<li><strong>MPI</strong>: <code>OpenMPI 4.1.x</code></li>
+<li><strong>Math library</strong>: <code>Intel MKL</code> (installed via <code>apt</code>)</li>
+</ul>
+<hr />
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<p>Install required packages:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>build-essential<span class="w"> </span>gfortran<span class="w"> </span>cmake<span class="w"> </span>git<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>libopenmpi-dev<span class="w"> </span>openmpi-bin<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>libfftw3-dev<span class="w"> </span>python3<span class="w"> </span>python3-pip<span class="w"> </span>gawk<span class="w"> </span>intel-mkl
+</code></pre></div>
+<h2 id="locating-mkl-libraries">Locating MKL Libraries<a class="headerlink" href="#locating-mkl-libraries" title="Permanent link">&para;</a></h2>
+<p>MKL libraries are installed in <code>/lib/x86_64-linux-gnu/</code> and headers in <code>/usr/include/mkl</code>.</p>
+<p>Check:
+<div class="highlight"><pre><span></span><code>ldconfig<span class="w"> </span>-p<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>mkl
+ls<span class="w"> </span>/usr/include/mkl
+</code></pre></div></p>
+<h2 id="environment-setup">Environment Setup<a class="headerlink" href="#environment-setup" title="Permanent link">&para;</a></h2>
+<p>Add to your <code>~/.bashrc</code>:
+<div class="highlight"><pre><span></span><code><span class="c1"># === Intel MKL ===</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">MKL_LIB</span><span class="o">=</span>/lib/x86_64-linux-gnu
+<span class="nb">export</span><span class="w"> </span><span class="nv">MKL_INC</span><span class="o">=</span>/usr/include/mkl
+<span class="nb">export</span><span class="w"> </span><span class="nv">INCLUDE</span><span class="o">=</span><span class="nv">$MKL_INC</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$MKL_LIB</span>:<span class="nv">$LD_LIBRARY_PATH</span>
 
-<h2 id="castep-2512-aocl-ubuntu-2404-ryzen-3900x-guia-final">CASTEP 25.12 + AOCL (Ubuntu 24.04, Ryzen 3900X) — Guia Final<a class="headerlink" href="#castep-2512-aocl-ubuntu-2404-ryzen-3900x-guia-final" title="Permanent link">&para;</a></h2>
-<h3 id="0-pre-requisitos">0) Pré-requisitos<a class="headerlink" href="#0-pre-requisitos" title="Permanent link">&para;</a></h3>
-<p><div class="highlight"><pre><span></span><code>sudo apt update
-sudo apt install -y build-essential gfortran cmake git \
-    libopenmpi-dev openmpi-bin \
-    libfftw3-dev python3 python3-pip gawk
-</code></pre></div>
-Confirme MPI
-<div class="highlight"><pre><span></span><code>which mpif90
-which mpirun
-# Esperado:
-# /usr/bin/mpif90
-# /usr/bin/mpirun
-</code></pre></div></p>
-<h3 id="1-definir-aocl-e-diretorios-de-biblioteca">1) Definir AOCL e diretórios de biblioteca<a class="headerlink" href="#1-definir-aocl-e-diretorios-de-biblioteca" title="Permanent link">&para;</a></h3>
-<p>Você instalou o AOCL em:
-/opt/AMD/aocl/aocl-linux-gcc-5.1.0</p>
-<p>Defina variáveis e caminho das libs (LP64):</p>
-<div class="highlight"><pre><span></span><code>export AOCL=/opt/AMD/aocl/aocl-linux-gcc-5.1.0
-export LIBDIR=$AOCL/gcc/lib_LP64
-export LD_LIBRARY_PATH=$LIBDIR:$LD_LIBRARY_PATH
-</code></pre></div>
-<h3 id="2-ajustar-symlinks-das-libs-aocl-uma-vez-so">2) Ajustar symlinks das libs AOCL (uma vez só)<a class="headerlink" href="#2-ajustar-symlinks-das-libs-aocl-uma-vez-so" title="Permanent link">&para;</a></h3>
-<p>O CASTEP procura libblis.so e libflame.so. No AOCL encontramos:</p>
-<p><div class="highlight"><pre><span></span><code>/opt/AMD/aocl/aocl-linux-gcc-5.1.0/gcc/lib_LP64/libblis.so.5.1.0
-/opt/AMD/aocl/aocl-linux-gcc-5.1.0/gcc/lib_LP64/libflame.so
-</code></pre></div>
-Crie os symlinks (no mesmo diretório):
-<div class="highlight"><pre><span></span><code>cd /opt/AMD/aocl/aocl-linux-gcc-5.1.0/gcc/lib_LP64
-sudo ln -s libblis.so.5.1.0 libblis.so
-sudo ln -s libblis-mt.so.5.1.0 libblis-mt.so
-# libflame.so já tem o nome esperado
-</code></pre></div></p>
-<h3 id="3-descompactar-o-castep">3) Descompactar o CASTEP<a class="headerlink" href="#3-descompactar-o-castep" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>tar -zxf CASTEP-25.12.tar.gz
-cd CASTEP-25.12
-</code></pre></div>
-<h3 id="4-compilar-serial-e-mpi-com-aocl-fftw3">4) Compilar (serial e MPI) com AOCL + FFTW3<a class="headerlink" href="#4-compilar-serial-e-mpi-com-aocl-fftw3" title="Permanent link">&para;</a></h3>
-<p>4.1 Serial (opcional, útil para utilitários)</p>
-<p><div class="highlight"><pre><span></span><code>make clean
-make -j$(nproc) COMMS_ARCH=serial \
-     MATHLIBS=aocl MATHLIBDIR=&quot;$LIBDIR&quot; \
-     FFT=fftw3  FFTLIBDIR=&quot;$LIBDIR&quot; \
-     BUILD=fast TARGETCPU=host
-make COMMS_ARCH=serial install
-</code></pre></div>
-Instala em:
-<div class="highlight"><pre><span></span><code>bin/linux_x86_64_gfortran10--serial/
-</code></pre></div>
-4.2 MPI (principal)
-<div class="highlight"><pre><span></span><code>make clean
-make -j$(nproc) COMMS_ARCH=mpi \
-     MATHLIBS=aocl MATHLIBDIR=&quot;$LIBDIR&quot; \
-     FFT=fftw3  FFTLIBDIR=&quot;$LIBDIR&quot; \
-     BUILD=fast TARGETCPU=host
-make COMMS_ARCH=mpi install
-</code></pre></div></p>
-<p>Instala em:
-<div class="highlight"><pre><span></span><code>bin/linux_x86_64_gfortran10--mpi/
-</code></pre></div></p>
-<h3 id="5-verificar-linkedicao-com-aocl">5) Verificar linkedição com AOCL<a class="headerlink" href="#5-verificar-linkedicao-com-aocl" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>ldd obj/linux_x86_64_gfortran*/castep.mpi | grep -E &quot;blis|flame&quot;
-# Esperado (caminhos AOCL):
-# libflame.so =&gt; /opt/AMD/aocl/aocl-linux-gcc-5.1.0/gcc/lib_LP64/libflame.so
-# libblis.so.5 =&gt; /opt/AMD/aocl/aocl-linux-gcc-5.1.0/gcc/lib_LP64/libblis.so.5
-# libblis-mt.so.5 =&gt; /opt/AMD/aocl/aocl-linux-gcc-5.1.0/gcc/lib_LP64/libblis-mt.so.5
-</code></pre></div>
-<h3 id="6-teste-rapido-mpi">6) Teste rápido (MPI)<a class="headerlink" href="#6-teste-rapido-mpi" title="Permanent link">&para;</a></h3>
-<p>Com arquivos si.cell/si.param prontos, rode:
-<div class="highlight"><pre><span></span><code>mpirun -np 4 ~/CASTEP/CASTEP-25.12/bin/linux_x86_64_gfortran10--mpi/castep.mpi si
-</code></pre></div></p>
-<p>(Ajuste -np conforme desejar.)</p>
-<h3 id="7-persistir-ambiente-no-bashrc">7) Persistir ambiente no ~/.bashrc<a class="headerlink" href="#7-persistir-ambiente-no-bashrc" title="Permanent link">&para;</a></h3>
-<p>Abra o arquivo:</p>
-<p><div class="highlight"><pre><span></span><code>nano ~/.bashrc
-</code></pre></div>
-Adicione ao final (usando os mesmos nomes de variáveis/comandos que usamos acima):
-<div class="highlight"><pre><span></span><code># === AOCL libraries ===
-export AOCL=/opt/AMD/aocl/aocl-linux-gcc-5.1.0
-export LD_LIBRARY_PATH=$AOCL/gcc/lib_LP64:$LD_LIBRARY_PATH
+<span class="c1"># Avoid MPI + MKL thread oversubscription</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">MKL_INTERFACE_LAYER</span><span class="o">=</span>LP64
+<span class="nb">export</span><span class="w"> </span><span class="nv">MKL_THREADING_LAYER</span><span class="o">=</span>GNU
+<span class="nb">export</span><span class="w"> </span><span class="nv">OMP_NUM_THREADS</span><span class="o">=</span><span class="m">1</span>
 
-# === CASTEP binaries (MPI) ===
-export PATH=$HOME/CASTEP/CASTEP-25.12/bin/linux_x86_64_gfortran10--mpi:$PATH
-</code></pre></div>
-Salve e recarregue:
-<div class="highlight"><pre><span></span><code>source ~/.bashrc
+<span class="c1"># === CASTEP binaries ===</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$HOME</span>/CASTEP/CASTEP-25.12/bin/linux_x86_64_gfortran10--mpi:<span class="nv">$PATH</span>
 </code></pre></div></p>
-<h3 id="8-wrapper-para-simplificar-mpirun-np-castepmpi">8) Wrapper para simplificar mpirun -np ... castep.mpi<a class="headerlink" href="#8-wrapper-para-simplificar-mpirun-np-castepmpi" title="Permanent link">&para;</a></h3>
-<p>Crie /usr/local/bin/castep-mpi:</p>
-<div class="highlight"><pre><span></span><code>sudo bash -lc &#39;cat &gt; /usr/local/bin/castep-mpi &lt;&lt; &quot;EOF&quot;
-#!/bin/bash
-# Uso: castep-mpi &lt;nprocs&gt; &lt;seed&gt; [args...]
-NPROCS=&quot;$1&quot;
-SEED=&quot;$2&quot;
-shift 2
-mpirun -np &quot;$NPROCS&quot; $HOME/CASTEP/CASTEP-25.12/bin/linux_x86_64_gfortran10--mpi/castep.mpi &quot;$SEED&quot; &quot;$@&quot;
-EOF
-chmod +x /usr/local/bin/castep-mpi&#39;
+<h2 id="building-castep">Building CASTEP<a class="headerlink" href="#building-castep" title="Permanent link">&para;</a></h2>
+<p>Unpack the source:
+<div class="highlight"><pre><span></span><code>tar<span class="w"> </span>-zxf<span class="w"> </span>CASTEP-25.12.tar.gz
+<span class="nb">cd</span><span class="w"> </span>CASTEP-25.12
 </code></pre></div>
-<p>Agora você pode rodar assim:
-<div class="highlight"><pre><span></span><code>castep-mpi 4 si
+Clean previous build </p>
+<div class="highlight"><pre><span></span><code>rm<span class="w"> </span>-rf<span class="w"> </span>obj/linux_x86_64_gfortran10--mpi
+</code></pre></div>
+<h2 id="mpi-build-with-mkl">MPI build with MKL<a class="headerlink" href="#mpi-build-with-mkl" title="Permanent link">&para;</a></h2>
+<p>First run make</p>
+<div class="admonition warning">
+<p class="admonition-title">DL_MG=None</p>
+<p>In this setup, we were not able install dl_mg module. We have tried several times and the following error kept being thrown out during make statement.Error:
+<div class="highlight"><pre><span></span><code>/usr/bin/ld: /home/numsim/CASTEP/CASTEP-25.12/obj/linux_x86_64_gfortran10--mpi/build/../../../Source/Functional/multigrid_dlmg.f90:444:(.text+0x146db): undefined reference to __dl_mg_MOD_dl_mg_error_string&#39; collect2: error: ld returned 1 exit status make[1]: *** [Makefile:220: ../castep.mpi] Error 1 rm f90wrap_stub.anc make[1]: Leaving directory &#39;/home/numsim/CASTEP/CASTEP-25.12/obj/linux_x86_64_gfortran10--mpi/build&#39; make: *** [make.inc:236: castep] Error 2
 </code></pre></div></p>
-<h3 id="9-duvidas-comuns-troubleshooting">9) Dúvidas comuns / Troubleshooting<a class="headerlink" href="#9-duvidas-comuns-troubleshooting" title="Permanent link">&para;</a></h3>
-<p>MPI_ABORT ... errorcode 1 logo no início
-Quase sempre é falta de pseudopotencial. Use OTFG no .cell:
-<div class="highlight"><pre><span></span><code>%BLOCK SPECIES_POT
-Si  OTFG  [Si] 3|2.0|2.0|2.0:2|6.0|8.0|10.0
-%ENDBLOCK SPECIES_POT
+</div>
+<p>As a solution we have chosen the following command:
+<div class="highlight"><pre><span></span><code>make<span class="w"> </span>-j<span class="k">$(</span>nproc<span class="k">)</span><span class="w"> </span><span class="nv">COMMS_ARCH</span><span class="o">=</span>mpi<span class="w"> </span><span class="nv">DL_MG</span><span class="o">=</span>none<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="nv">MATHLIBS</span><span class="o">=</span>mkl<span class="w"> </span><span class="nv">MATHLIBDIR</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$MKL_LIB</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="nv">FFT</span><span class="o">=</span>mkl<span class="w"> </span><span class="nv">FFTLIBDIR</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$MKL_LIB</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="nv">EXTRA_LIBS</span><span class="o">=</span><span class="s2">&quot;-Wl,--start-group -lmkl_intel_lp64 -lmkl_gnu_thread -lmkl_core -Wl,--end-group -lsymspg -lgomp -lpthread -lm -ldl&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="nv">LDFLAGS</span><span class="o">=</span><span class="s2">&quot;-L</span><span class="nv">$MKL_LIB</span><span class="s2"> -Wl,--no-as-needed -Wl,-rpath,</span><span class="nv">$MKL_LIB</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="nv">BUILD</span><span class="o">=</span>fast<span class="w"> </span><span class="nv">TARGETCPU</span><span class="o">=</span>host
 </code></pre></div>
-ou defina PSPOT_DIR para .usp.</p>
-<p>cannot find -lflame / -lblis
-Garanta:</p>
-<div class="highlight"><pre><span></span><code>export LIBDIR=$AOCL/gcc/lib_LP64
-
-export LD_LIBRARY_PATH=$LIBDIR:$LD_LIBRARY_PATH
+then install:
+<div class="highlight"><pre><span></span><code>make<span class="w"> </span><span class="nv">COMMS_ARCH</span><span class="o">=</span>mpi<span class="w"> </span>install
+</code></pre></div></p>
+<h2 id="verifying-installation">Verifying installation<a class="headerlink" href="#verifying-installation" title="Permanent link">&para;</a></h2>
+<p>Check that the binary links against MKL and spglib:
+<div class="highlight"><pre><span></span><code>ldd<span class="w"> </span>bin/linux_x86_64_gfortran10--mpi/castep.mpi<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s2">&quot;mkl|symspg&quot;</span>
 </code></pre></div>
-<p>symlinks criados (passo 2).</p>
-<p>Utilitários reclamando diretório --serial ausente no make install
-É normal se você instalou só MPI. Para instalar utilitários, também rode o build/instalação serial:</p>
-<p><div class="highlight"><pre><span></span><code>make COMMS_ARCH=serial BUILD=fast TARGETCPU=host
-make COMMS_ARCH=serial install
+Run version header check:
+<div class="highlight"><pre><span></span><code>mpirun<span class="w"> </span>-np<span class="w"> </span><span class="m">4</span><span class="w"> </span>bin/linux_x86_64_gfortran10--mpi/castep.mpi<span class="w"> </span>--version
 </code></pre></div>
-Quantos processos usar?
-Sua CPU tem 12 cores físicos / 24 threads. Comece testando:</p>
-<p>castep-mpi 12 si (1 MPI por core físico)</p>
-<p>compare com castep-mpi 24 si (1 MPI por thread)</p>
-<p>e com castep-mpi 4 si (teste leve)</p>
-<h3 id="10-exemplo-final-de-execucao">10) Exemplo final de execução<a class="headerlink" href="#10-exemplo-final-de-execucao" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code># com wrapper e 12 processos (recomendação inicial)
-castep-mpi 12 si
+Expected: MKL and OpenMPI are listed.</p>
+<h2 id="wrapper-script">Wrapper Script<a class="headerlink" href="#wrapper-script" title="Permanent link">&para;</a></h2>
+<p>To run only commadn castep-mpi as default
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>bash<span class="w"> </span>-lc<span class="w"> </span><span class="s1">&#39;cat &gt; /usr/local/bin/castep-mpi &lt;&lt; &quot;EOF&quot;</span>
+<span class="s1">#!/bin/bash</span>
+<span class="s1"># Usage: castep-mpi &lt;nprocs&gt; &lt;seed&gt; [args...]</span>
+<span class="s1">NPROCS=&quot;$1&quot;; SEED=&quot;$2&quot;; shift 2</span>
+<span class="s1">mpirun -np &quot;$NPROCS&quot; --bind-to core &quot;$HOME/CASTEP/CASTEP-25.12/bin/linux_x86_64_gfortran10--mpi/castep.mpi&quot; &quot;$SEED&quot; &quot;$@&quot;</span>
+<span class="s1">EOF</span>
+<span class="s1">chmod +x /usr/local/bin/castep-mpi&#39;</span>
 </code></pre></div>
+Now you run jobs with:
+<div class="highlight"><pre><span></span><code>castep-mpi<span class="w"> </span><span class="m">24</span><span class="w"> </span>si
+</code></pre></div></p>
+<h2 id="troubleshoting">Troubleshoting<a class="headerlink" href="#troubleshoting" title="Permanent link">&para;</a></h2>
+<p>MPI_ABORT error at start: missing pseudopotential → check SPECIES_POT block or PSPOT_DIR.<br/></p>
+<p>Falls back to generic BLAS (-llapack -lblas): ensure MKL paths are set and passed to make.<br/></p>
+<p>Undefined DL_MG symbols: either disable (DL_MG=none) or build DL_MG (DL_MG=compile) if available in your source<br/></p>
 
 
 

@@ -2,10 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://example.com/</loc>
-         <lastmod>2025-09-02</lastmod>
+         <lastmod>2025-09-09</lastmod>
     </url>
     <url>
-         <loc>https://example.com/CASTEP/Installation/</loc>
-         <lastmod>2025-09-02</lastmod>
+         <loc>https://example.com/DFT/Installation%20CASTEP%20-%20AOCL/</loc>
+         <lastmod>2025-09-09</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/DFT/Installation%20CASTEP%20-%20MKL/</loc>
+         <lastmod>2025-09-09</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/DFT/Python%20Runner/</loc>
+         <lastmod>2025-09-09</lastmod>
     </url>
 </urlset>
