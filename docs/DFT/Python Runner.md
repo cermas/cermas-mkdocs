@@ -1,12 +1,10 @@
-# Python Runner
+# CASTEP Runner
 
 You find our python package to run automated scans in castep using the wraper castep-mpi on ubuntu plataforms.
 [here](https://github.com/cermas/castep_python_runner)
 
 
 # CASTEP Runner — User Guide
-
-This guide describes how to use the **CASTEP Runner** utility. It is written in Markdown with [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) in mind.
 
 ---
 

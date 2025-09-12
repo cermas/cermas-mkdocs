@@ -1,6 +1,7 @@
-site_name: CERMAS Docs
+site_name: Documentation
 site_url: https://cermas.github.io/cermas-mkdocs/
 theme:
+  logo: assets/logo2.png
   name: material
   language: en
   features:
@@ -14,7 +15,7 @@ theme:
     - content.tabs.link
   palette:
     - scheme: default
-      primary: indigo
+      primary: white
       accent: indigo
       toggle:
         icon: material/weather-night
@@ -65,3 +66,6 @@ extra:
   version:
     provider: mike
     default : latest
+
+extra_css:
+  - css/extra.css
