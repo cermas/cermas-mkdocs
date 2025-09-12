@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://example.com/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <loc>https://cermas.github.io/cermas-mkdocs/</loc>
+         <lastmod>2025-09-12</lastmod>
     </url>
     <url>
-         <loc>https://example.com/DFT/Installation%20CASTEP%20-%20AOCL/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <loc>https://cermas.github.io/cermas-mkdocs/DFT/Installation%20CASTEP%20-%20AOCL/</loc>
+         <lastmod>2025-09-12</lastmod>
     </url>
     <url>
-         <loc>https://example.com/DFT/Installation%20CASTEP%20-%20MKL/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <loc>https://cermas.github.io/cermas-mkdocs/DFT/Installation%20CASTEP%20-%20MKL/</loc>
+         <lastmod>2025-09-12</lastmod>
     </url>
     <url>
-         <loc>https://example.com/DFT/Python%20Runner/</loc>
-         <lastmod>2025-09-09</lastmod>
+         <loc>https://cermas.github.io/cermas-mkdocs/DFT/Python%20Runner/</loc>
+         <lastmod>2025-09-12</lastmod>
     </url>
 </urlset>

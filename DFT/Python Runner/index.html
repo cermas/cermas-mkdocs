@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://example.com/DFT/Python%20Runner/">
+        <link rel="canonical" href="https://cermas.github.io/cermas-mkdocs/DFT/Python%20Runner/">
       
       
         <link rel="prev" href="../Installation%20CASTEP%20-%20MKL/">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Python Runner - CERMAS Docs</title>
+        <title>Python Runner - Documentation</title>
       
     
     
@@ -46,6 +46,8 @@
       
     
     
+      <link rel="stylesheet" href="../../css/extra.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -63,7 +65,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#python-runner" class="md-skip">
+        <a href="#castep-runner" class="md-skip">
           Skip to content
         </a>
       
@@ -90,10 +92,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="CERMAS Docs" class="md-header__button md-logo" aria-label="CERMAS Docs" data-md-component="logo">
+    <a href="../.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../assets/logo2.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -104,7 +105,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            CERMAS Docs
+            Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -123,7 +124,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
@@ -280,13 +281,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="CERMAS Docs" class="md-nav__button md-logo" aria-label="CERMAS Docs" data-md-component="logo">
+    <a href="../.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../assets/logo2.png" alt="logo">
 
     </a>
-    CERMAS Docs
+    Documentation
   </label>
   
     <div class="md-nav__source">
@@ -496,9 +496,151 @@
   
 
 
-<h1 id="python-runner">Python Runner<a class="headerlink" href="#python-runner" title="Permanent link">&para;</a></h1>
+<h1 id="castep-runner">CASTEP Runner<a class="headerlink" href="#castep-runner" title="Permanent link">&para;</a></h1>
 <p>You find our python package to run automated scans in castep using the wraper castep-mpi on ubuntu plataforms.
 <a href="https://github.com/cermas/castep_python_runner">here</a></p>
+<h1 id="castep-runner-user-guide">CASTEP Runner — User Guide<a class="headerlink" href="#castep-runner-user-guide" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p><code>CASTEP Runner</code> is a modular Python wrapper that automates launching <code>castep-mpi</code> calculations. It helps organize runs in dedicated folders, automatically edits CASTEP input files, and supports parameter scans.</p>
+<p><strong>Highlights:</strong></p>
+<ul>
+<li>Edits <code>cut_off_energy</code> in <code>.param</code> files.</li>
+<li>Edits <code>kpoint_mp_grid</code> in <code>.cell</code> files.</li>
+<li>Stages all relevant input files into a clean run directory.</li>
+<li>Executes <code>castep-mpi &lt;np&gt; &lt;seedname&gt;</code> inside that directory.</li>
+<li>Supports <strong>single runs</strong> and <strong>scans</strong> (cutoff or k-grid).</li>
+<li>Provides <code>--dry-run</code> mode for setup without execution.</li>
+</ul>
+<hr />
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<p>Requirements:</p>
+<ul>
+<li>Python 3.8+</li>
+<li><code>castep-mpi</code> in your <code>$PATH</code></li>
+</ul>
+<p>Clone or copy the package structure:</p>
+<div class="highlight"><pre><span></span><code>project/
+├─ run_castep.py
+└─ castep_runner/
+   ├─ __init__.py
+   ├─ cli.py
+   ├─ io_utils.py
+   ├─ param_edit.py
+   ├─ cell_edit.py
+   ├─ runner.py
+   └─ constants.py
+</code></pre></div>
+<p>Make the entry point executable:</p>
+<div class="highlight"><pre><span></span><code>chmod<span class="w"> </span>+x<span class="w"> </span>run_castep.py
+</code></pre></div>
+<hr />
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<h3 id="single-cutoff-run">Single cutoff run<a class="headerlink" href="#single-cutoff-run" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>run_castep.py<span class="w"> </span>&lt;NP&gt;<span class="w"> </span>&lt;SEEDNAME&gt;<span class="w"> </span>--cutoff<span class="w"> </span>&lt;INT&gt;
+</code></pre></div>
+<ul>
+<li>Creates <code>cutoffs/&lt;seedname&gt;_&lt;cutoff&gt;/</code></li>
+<li>Stages inputs</li>
+<li>Ensures <code>cut_off_energy : &lt;cutoff&gt; eV</code> in <code>.param</code></li>
+<li>Runs CAStep</li>
+</ul>
+<h3 id="cutoff-scan">Cutoff scan<a class="headerlink" href="#cutoff-scan" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>run_castep.py<span class="w"> </span>&lt;NP&gt;<span class="w"> </span>&lt;SEEDNAME&gt;<span class="w"> </span>--cutoff-scan<span class="w"> </span>START<span class="w"> </span>END<span class="w"> </span>STEP
+</code></pre></div>
+<ul>
+<li>Generates subdirectories for each cutoff value.</li>
+<li><strong>Inclusion rule:</strong> always include <code>START</code>; include <code>END</code> only if reached exactly by stepping.</li>
+</ul>
+<h3 id="single-k-point-grid">Single k-point grid<a class="headerlink" href="#single-k-point-grid" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>run_castep.py<span class="w"> </span>&lt;NP&gt;<span class="w"> </span>&lt;SEEDNAME&gt;<span class="w"> </span>--kgrid<span class="w"> </span>NX<span class="w"> </span>NY<span class="w"> </span>NZ
+</code></pre></div>
+<ul>
+<li>Creates <code>kgrids/&lt;seedname&gt;_&lt;NX&gt;x&lt;NY&gt;x&lt;NZ&gt;/</code></li>
+<li>Edits <code>.cell</code> with <code>kpoint_mp_grid NX NY NZ</code></li>
+<li>Runs CAStep</li>
+</ul>
+<h3 id="k-grid-scan">K-grid scan<a class="headerlink" href="#k-grid-scan" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>run_castep.py<span class="w"> </span>&lt;NP&gt;<span class="w"> </span>&lt;SEEDNAME&gt;<span class="w"> </span>--kgrid-scan<span class="w"> </span>S1<span class="w"> </span>E1<span class="w"> </span>T1<span class="w">  </span>S2<span class="w"> </span>E2<span class="w"> </span>T2<span class="w">  </span>S3<span class="w"> </span>E3<span class="w"> </span>T3
+</code></pre></div>
+<ul>
+<li><strong>First triple</strong> <code>(S1,E1,T1)</code>: starting grid.</li>
+<li><strong>Second triple</strong> <code>(S2,E2,T2)</code>: ending grid.</li>
+<li><strong>Third triple</strong> <code>(S3,E3,T3)</code>: step increments.</li>
+<li>All three axes advance together. Non-varying axes should have step <code>0</code>.</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Vary only Nx:</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code>python<span class="w"> </span>run_castep.py<span class="w"> </span><span class="m">4</span><span class="w"> </span>SiO2<span class="w"> </span>--kgrid-scan<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">2</span><span class="w">  </span><span class="m">6</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">2</span><span class="w">  </span><span class="m">2</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">0</span>
+<span class="c1"># → (2 2 2), (4 2 2), (6 2 2)</span>
+</code></pre></div>
+* Vary all axes equally:</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>run_castep.py<span class="w"> </span><span class="m">4</span><span class="w"> </span>SiO2<span class="w"> </span>--kgrid-scan<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">2</span><span class="w">  </span><span class="m">8</span><span class="w"> </span><span class="m">8</span><span class="w"> </span><span class="m">8</span><span class="w">  </span><span class="m">2</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">2</span>
+<span class="c1"># → (2 2 2), (4 4 4), (6 6 6), (8 8 8)</span>
+</code></pre></div>
+<p><strong>Inclusion rule:</strong> start is always included; end is included only if exactly reached.</p>
+<h3 id="dry-run">Dry run<a class="headerlink" href="#dry-run" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>run_castep.py<span class="w"> </span><span class="m">4</span><span class="w"> </span>SiO2<span class="w"> </span>--cutoff<span class="w"> </span><span class="m">700</span><span class="w"> </span>--dry-run
+</code></pre></div>
+<p>Prepares the directory and edits inputs but does not execute CAStep.</p>
+<hr />
+<h2 id="input-staging">Input Staging<a class="headerlink" href="#input-staging" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Copies <code>.cell</code>, <code>.param</code>, <code>.usp</code>, and other relevant files.</li>
+<li>Copies any <code>seedname.*</code> file as a catch-all.</li>
+<li>Existing files in run directories are not overwritten.</li>
+</ul>
+<hr />
+<h2 id="editing-behavior">Editing Behavior<a class="headerlink" href="#editing-behavior" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>.param:</strong> ensures a line <code>cut_off_energy : &lt;value&gt; eV</code> exists and updates it.</li>
+<li><strong>.cell:</strong> ensures a line <code>kpoint_mp_grid &lt;nx&gt; &lt;ny&gt; &lt;nz&gt;</code> exists and updates it.</li>
+</ul>
+<hr />
+<h2 id="output-organization">Output Organization<a class="headerlink" href="#output-organization" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Cutoff runs:</strong> <code>cutoffs/&lt;seedname&gt;_&lt;cutoff&gt;/</code></li>
+<li><strong>K-grid runs:</strong> <code>kgrids/&lt;seedname&gt;_&lt;nx&gt;x&lt;ny&gt;x&lt;nz&gt;/</code></li>
+</ul>
+<p>Each folder contains both inputs and outputs, ensuring reproducibility.</p>
+<hr />
+<h2 id="exit-codes">Exit Codes<a class="headerlink" href="#exit-codes" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>0</code> — success</li>
+<li><code>127</code> — <code>castep-mpi</code> not found</li>
+<li><code>1</code> — missing required input file (<code>.param</code> or <code>.cell</code>)</li>
+<li><code>2</code> — invalid scan arguments</li>
+<li>Non-zero from CAStep — propagated upwards</li>
+</ul>
+<hr />
+<h2 id="extending">Extending<a class="headerlink" href="#extending" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Parallel scans:</strong> add <code>--jobs N</code> and use multiprocessing.</li>
+<li><strong>Additional parameters:</strong> implement in <code>param_edit.py</code> or <code>cell_edit.py</code>.</li>
+<li><strong>Scheduler integration:</strong> replace direct run with SLURM/LSF submission.</li>
+</ul>
+<hr />
+<h2 id="programmatic-api">Programmatic API<a class="headerlink" href="#programmatic-api" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">castep_runner.io_utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">ensure_run_dir</span><span class="p">,</span> <span class="n">stage_inputs</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">castep_runner.param_edit</span><span class="w"> </span><span class="kn">import</span> <span class="n">set_cutoff_in_param</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">castep_runner.cell_edit</span><span class="w"> </span><span class="kn">import</span> <span class="n">set_kgrid_in_cell</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">castep_runner.runner</span><span class="w"> </span><span class="kn">import</span> <span class="n">run_castep</span>
+
+<span class="n">run_dir</span> <span class="o">=</span> <span class="n">ensure_run_dir</span><span class="p">(</span><span class="s2">&quot;SiO2&quot;</span><span class="p">,</span> <span class="mi">700</span><span class="p">)</span>
+<span class="n">stage_inputs</span><span class="p">(</span><span class="s2">&quot;SiO2&quot;</span><span class="p">,</span> <span class="n">run_dir</span><span class="p">)</span>
+<span class="n">set_cutoff_in_param</span><span class="p">(</span><span class="n">run_dir</span><span class="o">/</span><span class="s2">&quot;SiO2.param&quot;</span><span class="p">,</span> <span class="mi">700</span><span class="p">)</span>
+<span class="n">set_kgrid_in_cell</span><span class="p">(</span><span class="n">run_dir</span><span class="o">/</span><span class="s2">&quot;SiO2.cell&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">rc</span> <span class="o">=</span> <span class="n">run_castep</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;SiO2&quot;</span><span class="p">,</span> <span class="n">run_dir</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="maintainer-notes">Maintainer Notes<a class="headerlink" href="#maintainer-notes" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Keep CLI logic in <code>cli.py</code>.</li>
+<li>Keep editing isolated in <code>param_edit.py</code> and <code>cell_edit.py</code>.</li>
+<li>Add tests around scan behavior (cutoff and k-grid) to ensure reproducibility.</li>
+</ul>
 
 
 
@@ -582,7 +724,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "search.suggest", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "search.suggest", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
