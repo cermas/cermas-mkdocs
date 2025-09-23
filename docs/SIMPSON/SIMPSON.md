@@ -34,3 +34,16 @@ Understanding the effects of anisotropic interactions (CSA, dipolar, quadrupolar
 Benchmarking experimental data against theoretical predictions.
 
 In this page, you also will find how to install SIMPSON program in your linux environment.
+
+## How to run simpson
+
+Simpson can be invoked via terminal:
+```bash
+simpson <filename>
+```
+It is also possible to run it in parallel with the following command:
+```bash
+mpirun -np <n> <filename>
+```
+## How to write a simpson file
+You can find how to write an input file for simpson using this [link](https://inano.au.dk/about/research-centers-and-projects/nmr/software/simpson)
