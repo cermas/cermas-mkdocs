@@ -2,30 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://cermas.github.io/cermas-mkdocs/dev/</loc>
-         <lastmod>2025-09-23</lastmod>
+         <lastmod>2025-11-20</lastmod>
     </url>
     <url>
          <loc>https://cermas.github.io/cermas-mkdocs/dev/DFT/DFT/</loc>
-         <lastmod>2025-09-23</lastmod>
+         <lastmod>2025-11-20</lastmod>
     </url>
     <url>
          <loc>https://cermas.github.io/cermas-mkdocs/dev/DFT/Installation%20CASTEP%20-%20AOCL/</loc>
-         <lastmod>2025-09-23</lastmod>
+         <lastmod>2025-11-20</lastmod>
     </url>
     <url>
          <loc>https://cermas.github.io/cermas-mkdocs/dev/DFT/Installation%20CASTEP%20-%20MKL/</loc>
-         <lastmod>2025-09-23</lastmod>
+         <lastmod>2025-11-20</lastmod>
     </url>
     <url>
          <loc>https://cermas.github.io/cermas-mkdocs/dev/DFT/Python%20Runner/</loc>
-         <lastmod>2025-09-23</lastmod>
+         <lastmod>2025-11-20</lastmod>
+    </url>
+    <url>
+         <loc>https://cermas.github.io/cermas-mkdocs/dev/NMR%20Lectures/lecture_1/</loc>
+         <lastmod>2025-11-20</lastmod>
     </url>
     <url>
          <loc>https://cermas.github.io/cermas-mkdocs/dev/SIMPSON/Installation/</loc>
-         <lastmod>2025-09-23</lastmod>
+         <lastmod>2025-11-20</lastmod>
     </url>
     <url>
          <loc>https://cermas.github.io/cermas-mkdocs/dev/SIMPSON/SIMPSON/</loc>
-         <lastmod>2025-09-23</lastmod>
+         <lastmod>2025-11-20</lastmod>
     </url>
 </urlset>
