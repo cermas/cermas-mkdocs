@@ -1,8 +1,8 @@
-# Hahn Echo, CPMG, and Contamination in Echo Trains (Theory-First Lecture Note)
+# Hahn Echo and Echo trains (Theory-First Lecture Note)
 
 !!! abstract "Scope and philosophy"
-    This note explains **Hahn echo** and **CPMG** using a theory-first approach aimed at simulation and quantitative reasoning (rather than spectrometer operation). We work from the density-operator viewpoint and keep the **minimum Hamiltonian** required to explain refocusing and the origin of **contamination** in echo trains.  
-    Where we omit interactions (dipolar couplings, CSA, quadrupolar terms, finite pulse effects, relaxation), we **state explicitly** what is being omitted and why.
+    This note explains **Hahn echo** and **CPMG** using a theory-first approach aimed at simulation and quantitative reasoning (rather than spectrometer operation). We work from the density-operator viewpoint and keep the **minimum Hamiltonian**. <br/>
+    We omit interactions (dipolar couplings, CSA, quadrupolar terms, finite pulse effects, relaxation), we **state explicitly** what is being omitted and why.
 
 ---
 
