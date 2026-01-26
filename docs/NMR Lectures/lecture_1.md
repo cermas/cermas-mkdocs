@@ -18,9 +18,9 @@ Both pictures describe two different physics that results into measuring macrosc
 
 Real NMR signals come from many nuclei – typically on the order of Avogadro’s number. Each nucleus carries a magnetic moment vector \( \mu_i \). Summing them over the whole sample gives the **net magnetization** which can be written as:
 
-\[
+$$\begin{equation}
 M = \sum_{i} \mu_i
-\]
+\end{equation}$$
 
 - In **zero magnetic field**, the individual moments are randomly oriented, ie, their vector sum is (on average) zero.
 - In a **static magnetic field** \( B_0 \), more spins align along the field direction than against it, ie, a small but nonzero net magnetization \( M \) appears.
@@ -36,27 +36,27 @@ Later, we’ll connect this classical \( M \) to underlying quantum populations.
 
 Classically, a magnetic moment \( \mu \) in a field \( B \) experiences a **torque**
 
-\[
+$$\begin{equation}
 \tau = \mu \times B
-\]
+\end{equation}$$
 
 For the whole sample, we treat the macroscopic magnetization \( M \) as playing the role of a single big magnetic moment. Then
 
-\[
+$$\begin{equation}
 \tau = M \times B
-\]
+\end{equation}$$
 
 On the other hand, torque is also related to the **rate of change of angular momentum** \( J \):
 
-\[
+$$\begin{equation}
 \tau = \frac{dJ}{dt}
-\]
+\end{equation}$$
 
 For nuclear spins, the magnetic moment and angular momentum are proportional:
 
-\[
+$$\begin{equation}
 \mu = \gamma I
-\]
+\end{equation}$$
 
 for a single spin, where
 
@@ -65,31 +65,31 @@ for a single spin, where
 
 Extending this to the ensemble we have
 
-\[
+$$\begin{equation}
 M = \gamma J
-\]
+\end{equation}$$
 
 So
 
-\[
+$$\begin{equation}
 \tau 
 = \frac{dJ}{dt} 
 = \frac{1}{\gamma} \frac{dM}{dt}
-\]
+\end{equation}$$
 
 Equating this with the torque from the magnetic field:
 
-\[
+$$\begin{equation}
 \frac{1}{\gamma}\frac{dM}{dt} = M \times B
-\]
+\end{equation}$$
 
 or
 
-\[
+$$\begin{equation}
 \boxed{
 \frac{dM}{dt} = \gamma\, M \times B
 }
-\]
+\end{equation}$$
 
 This is the **equation of motion** for the magnetization vector.
 
@@ -99,19 +99,19 @@ This is the **equation of motion** for the magnetization vector.
 
 Now we have to specialize to a **static, uniform magnetic field** along the \(z\)-axis which is typically the case we face in the experiments:
 
-\[
+$$\begin{equation}
 B_0 = (0, 0, B_0)
-\]
+\end{equation}$$
 
 Insert this into the equation of motion we have derived
 
-\[
+$$\begin{equation}
 \frac{dM}{dt} = \gamma\, M \times B_0
-\]
+\end{equation}$$
 
 Write \( M = (M_x, M_y, M_z) \). Then the cross product gives:
 
-\[
+$$\begin{equation}
 M \times B_0 
 = 
 \begin{pmatrix}
@@ -127,21 +127,21 @@ M_y B_0 \\
 - M_x B_0 \\
 0
 \end{pmatrix}
-\]
+\end{equation}$$
 
 So
 
-\[
+$$\begin{equation}
 \frac{dM_x}{dt} = \gamma\, M_y B_0
-\]
+\end{equation}$$
 
-\[
+$$\begin{equation}
 \frac{dM_y}{dt} = -\gamma\, M_x B_0
-\]
+\end{equation}$$
 
-\[
+$$\begin{equation}
 \frac{dM_z}{dt} = 0
-\]
+\end{equation}$$
 
 Key points:
 
@@ -150,33 +150,33 @@ Key points:
 
 We can combine these into a single complex variable
 
-\[
+$$\begin{equation}
 M_\perp = M_x + i M_y
-\]
+\end{equation}$$
 
 Then
 
-\[
+$$\begin{equation}
 \frac{dM_\perp}{dt} 
 = \frac{d}{dt}(M_x + iM_y)
 = \gamma B_0 M_y + i(-\gamma B_0 M_x)
 = -i \gamma B_0 (M_x + iM_y)
 = -i \gamma B_0 M_\perp
-\]
+\end{equation}$$
 
 This differential equation has solution
 
-\[
+$$\begin{equation}
 M_\perp(t) = M_\perp(0)\, e^{-i \omega_0 t}
-\]
+\end{equation}$$
 
 where
 
-\[
+$$\begin{equation}
 \boxed{
 \omega_0 = \gamma B_0
 }
-\]
+\end{equation}$$
 
 is the **Larmor frequency**.
 
@@ -197,15 +197,15 @@ In a pulsed NMR experiment, we apply an additional **radiofrequency (rf) field**
 
 A convenient idealization:
 
-\[
+$$\begin{equation}
 B_1(t) = (B_1 \cos \omega_{\text{rf}} t,\; B_1 \sin \omega_{\text{rf}} t,\; 0)
-\]
+\end{equation}$$
 
 The **total field** is then:
 
-\[
+$$\begin{equation}
 B(t) = B_0 + B_1(t)
-\]
+\end{equation}$$
 
 Solving the exact motion in the lab frame is possible but messy. Instead, NMR uses the **rotating frame**.
 
@@ -220,19 +220,19 @@ Imagine looking at the system from a coordinate frame rotating around the \(z\)-
 
 Mathematically, in the rotating frame the magnetization obeys:
 
-\[
+$$\begin{equation}
 \frac{dM}{dt}\Big|_{\text{rot}} = 
 \gamma\, M \times B_{\text{eff}}
-\]
+\end{equation}$$
 
 where the **effective field** is
 
-\[
+$$\begin{equation}
 B_{\text{eff}} =
 \left(
 B_1,\; 0,\; \frac{\omega_0 - \omega_{\text{rf}}}{\gamma}
 \right)
-\]
+\end{equation}$$
 
 (Here we’ve chosen \(B_1\) along the rotating-frame \(x\)-axis for simplicity.)
 
@@ -250,33 +250,33 @@ In the rotating frame, if \( M \) starts along the \(+z\)-axis and the rf field 
 
 The **nutation frequency** (rate of rotation about \(B_1\)) is:
 
-\[
+$$\begin{equation}
 \omega_1 = \gamma B_1
-\]
+\end{equation}$$
 
 If the pulse is applied for a duration \(t_{\text{rf}}\), the **flip angle** (rotation angle) is:
 
-\[
+$$\begin{equation}
 \boxed{
 \theta_{\text{rf}} = \omega_1 t_{\text{rf}} = \gamma B_1 t_{\text{rf}}
 }
-\]
+\end{equation}$$
 
 Important special cases:
 
 - **\(90^\circ\) pulse** (or \(\pi/2\) pulse):
 
-\[
+$$\begin{equation}
   \theta_{\text{rf}} = \frac{\pi}{2} \quad \Rightarrow \quad t_{\pi/2} = \frac{\pi}{2 \gamma B_1}
-\]
+\end{equation}$$
 
   Rotates \(M\) from \(+z\) into the transverse plane (e.g. along \(-y\) if pulse is along \(+x\)).<br/><br/>
 
 - **\(180^\circ\) pulse** (or \(\pi\) pulse):
 
-\[
+$$\begin{equation}
   \theta_{\text{rf}} = \pi \quad \Rightarrow \quad t_{\pi} = \frac{\pi}{\gamma B_1}
-\]
+\end{equation}$$
 
   Inverts \(M\) from \(+z\) to \(-z\).
 
@@ -327,40 +327,40 @@ For NMR, the most common case is **spin-½**:
 
 A magnetic moment operator \( \hat{\mu} \) is proportional to the spin operator:
 
-\[
+$$\begin{equation}
 \hat{\mu} = \gamma \hbar \hat{I}
-\]
+\end{equation}$$
 
 Place the spin in a **static magnetic field** \( B_0 = (0, 0, B_0) \).  
 The energy (Hamiltonian operator) is
 
-\[
+$$\begin{equation}
 \hat{H} = - \hat{\mu} \cdot B_0
        = - \gamma \hbar \hat{I} \cdot (0,0,B_0)
        = - \gamma \hbar B_0 \hat{I}_z
-\]
+\end{equation}$$
 
 We now find the **energy eigenstates** by applying \( \hat{H} \) to \( |I, m\rangle \):
 
-\[
+$$\begin{equation}
 \hat{H} |I, m\rangle = - \gamma \hbar B_0 \hat{I}_z |I, m\rangle
                      = - \gamma \hbar B_0 (\hbar m) |I, m\rangle
                      = E_{I,m} |I, m\rangle
-\]
+\end{equation}$$
 
 Thus
 
-\[
+$$\begin{equation}
 \boxed{
 E_{I,m} = - \gamma \hbar^2 B_0\, m
 }
-\]
+\end{equation}$$
 
 Often the factor of \( \hbar \) is absorbed into the definition of \( \hat{I}_z \), so one writes simply
 
-\[
+$$\begin{equation}
 E_{I,m} = - \gamma \hbar B_0 m
-\]
+\end{equation}$$
 
 For a **spin-½**:
 
@@ -369,15 +369,15 @@ For a **spin-½**:
 
 The **energy splitting** between the two levels is
 
-\[
+$$\begin{equation}
 \Delta E = E_{-} - E_{+} = \gamma \hbar B_0
-\]
+\end{equation}$$
 
 Dividing by \( \hbar \), we get a frequency:
 
-\[
+$$\begin{equation}
 \frac{\Delta E}{\hbar} = \gamma B_0 = \omega_0
-\]
+\end{equation}$$
 
 This is exactly the **Larmor frequency** we found in the classical picture.
 
@@ -392,9 +392,9 @@ Real samples contain **many spins**. At nonzero temperature, spins occupy the en
 
 For a level with energy \( E_y \), the equilibrium population fraction is
 
-\[
+$$\begin{equation}
 p_y = \frac{e^{-E_y / k_B T}}{\sum_{y'} e^{-E_{y'} / k_B T}}
-\]
+\end{equation}$$
 
 For a spin-½ in a field \( B_0 \):
 
@@ -405,22 +405,22 @@ Since \( \Delta E = \gamma \hbar B_0 \) is typically **much smaller** than \( k_
 
 The **z-component** of the magnetic moment operator is
 
-\[
+$$\begin{equation}
 \hat{\mu}_z = \gamma \hbar \hat{I}_z
-\]
+\end{equation}$$
 
 The **ensemble-averaged magnetization** along \(z\) is
 
-\[
+$$\begin{equation}
 \langle M_z \rangle = N \langle \hat{\mu}_z \rangle
-\]
+\end{equation}$$
 
 where \(N\) = number of spins, and
 
-\[
+$$\begin{equation}
 \langle \hat{\mu}_z \rangle 
 = \sum_y p_y \langle y | \hat{\mu}_z | y \rangle
-\]
+\end{equation}$$
 
 For spin-½, there are only two states: \( |\alpha\rangle \) and \( |\beta\rangle \).
 
@@ -429,20 +429,20 @@ For spin-½, there are only two states: \( |\alpha\rangle \) and \( |\beta\rangl
 
 Therefore
 
-\[
+$$\begin{equation}
 \langle \hat{\mu}_z \rangle 
 = p_\alpha \gamma \hbar \left(+\frac{1}{2}\right)
 + p_\beta \gamma \hbar \left(-\frac{1}{2}\right)
 = \gamma \hbar \frac{1}{2}(p_\alpha - p_\beta)
-\]
+\end{equation}$$
 
 so the macroscopic magnetization is
 
-\[
+$$\begin{equation}
 \boxed{
 \langle M_z \rangle = N \gamma \hbar \frac{1}{2} (p_\alpha - p_\beta)
 }
-\]
+\end{equation}$$
 
 Thus:
 
