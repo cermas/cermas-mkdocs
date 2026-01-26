@@ -1308,42 +1308,42 @@ We omit interactions (dipolar couplings, CSA, quadrupolar terms, finite pulse ef
 <h2 id="1-what-is-being-measured-in-nmr">1. What is being measured in NMR?<a class="headerlink" href="#1-what-is-being-measured-in-nmr" title="Permanent link">&para;</a></h2>
 <h3 id="11-inductive-detection-is-linear-in-transverse-magnetization">1.1 Inductive detection is linear in transverse magnetization<a class="headerlink" href="#11-inductive-detection-is-linear-in-transverse-magnetization" title="Permanent link">&para;</a></h3>
 <p>We start by minimal look at the experimental setup. The RF (radio-frequency) coil detects a voltage proportional to the <strong>time derivative</strong> of the sample’s transverse magnetization. In standard NMR theory (and in most simulation frameworks), this is captured by the expectation value of transverse spin operators:<br/></p>
-<div class="arithmatex">\[
+<div class="arithmatex">\[\begin{equation}
 s(t)\;\propto\;\langle I_x\rangle(t) + i\langle I_y\rangle(t)
 \;\equiv\;\langle I_+\rangle(t),
 \qquad I_+=I_x+iI_y.
-\]</div>
+\end{equation}\]</div>
 <p>In the density-operator language:</p>
-<div class="arithmatex">\[
+<div class="arithmatex">\[\begin{equation}
 \langle I_\alpha\rangle(t)=\mathrm{Tr}\!\left[I_\alpha\,\rho(t)\right],\qquad \alpha\in\{x,y,+\}.
-\]</div>
+\end{equation}\]</div>
 <p><strong>Key point:</strong> only the part of <span class="arithmatex">\(\rho(t)\)</span> proportional to <span class="arithmatex">\(I_x\)</span> and/or <span class="arithmatex">\(I_y\)</span> contributes directly to the observed signal. The experimental aparatus is set so that you can detect signal of one of those quantities. At high field and high temperature (the usual approximation in solid-state NMR theory), we take the following approximation</p>
-<div class="arithmatex">\[
+<div class="arithmatex">\[\begin{equation}
 \rho_{\mathrm{eq}} \propto I_z.
-\]</div>
+\end{equation}\]</div>
 <p>This captures the fact that equilibrium magnetization is along the static magnetic field (laboratory <span class="arithmatex">\(z\)</span>-axis). Throughout this lecture we always assume these two ingredients as a starting point. </p>
 <hr />
 <h2 id="2-the-minimal-model-for-echoes-static-offsets">2. The minimal model for echoes: static offsets<a class="headerlink" href="#2-the-minimal-model-for-echoes-static-offsets" title="Permanent link">&para;</a></h2>
 <h3 id="21-hamiltonian">2.1 Hamiltonian<a class="headerlink" href="#21-hamiltonian" title="Permanent link">&para;</a></h3>
 <p>To explain echoes, we use a single-spin Hamiltonian with a static frequency offset:</p>
-<div class="arithmatex">\[
+<div class="arithmatex">\[\begin{equation}
 H = \Delta\omega\, I_z.
-\]</div>
+\end{equation}\]</div>
 <p>Here <span class="arithmatex">\(\Delta\omega\)</span> represents the difference between a given spin packet's precession frequency and the rotating frame reference (due to <span class="arithmatex">\(B_0\)</span> inhomogeneity and/or chemical shift dispersion). This model excludes any spin interaction inside the sample.</p>
 <p>From this hamiltonian we can define the free propagator for a time interval <span class="arithmatex">\(\tau\)</span></p>
-<div class="arithmatex">\[
+<div class="arithmatex">\[\begin{equation}
 U(\tau)=e^{-iH\tau}=e^{-i\Delta\omega I_z\tau}.
-\]</div>
+\end{equation}\]</div>
 <p>Conjugation by <span class="arithmatex">\(U(\tau)\)</span> rotates transverse operators in the <span class="arithmatex">\(xy\)</span>-plane. If we define <span class="arithmatex">\(\phi=\Delta\omega\tau\)</span> then:</p>
-<div class="arithmatex">\[
+<div class="arithmatex">\[\begin{equation}
 U(\tau)\,I_x\,U^\dagger(\tau)=I_x\cos\phi + I_y\sin\phi,
-\]</div>
-<div class="arithmatex">\[
+\end{equation}\]</div>
+<div class="arithmatex">\[\begin{equation}
 U(\tau)\,I_y\,U^\dagger(\tau)=I_y\cos\phi - I_x\sin\phi,
-\]</div>
-<div class="arithmatex">\[
+\end{equation}\]</div>
+<div class="arithmatex">\[\begin{equation}
 U(\tau)\,I_z\,U^\dagger(\tau)=I_z.
-\]</div>
+\end{equation}\]</div>
 <div class="admonition note">
 <p class="admonition-title">About notation (important)</p>
 <p>The operators <span class="arithmatex">\(I_x, I_y, I_z\)</span> on the <strong>right-hand side</strong> are the fixed basis operators (time-zero operators).<br />
@@ -1352,39 +1352,39 @@ This avoids the ambiguity of writing <span class="arithmatex">\(I_x(t)\)</span> 
 </div>
 <hr />
 <p>The relations above are found by the following steps</p>
-<div class="arithmatex">\[
+<div class="arithmatex">\[\begin{equation}
 I_x(t) = U(\tau)\,I_x\,U^\dagger(\tau) = e^{i\Delta \omega \tau I_z}I_x e^{-i\Delta \omega \tau I_z}
-\]</div>
-<div class="arithmatex">\[
+\end{equation}\]</div>
+<div class="arithmatex">\[\begin{equation}
 \frac{d}{dt}I_x(t) = i\Delta \omega     e^{i\Delta \omega \tau I_z}[I_z,I_x] e^{-i\Delta \omega \tau I_z}
-\]</div>
+\end{equation}\]</div>
 <p>since <span class="arithmatex">\([I_z,I_x]=i I_y\)</span> then</p>
-<div class="arithmatex">\[
+<div class="arithmatex">\[\begin{equation}
 \frac{d}{dt}I_x(t) = -\Delta \omega     I_y(t)
-\]</div>
+\end{equation}\]</div>
 <p>Similarly,</p>
-<div class="arithmatex">\[
+<div class="arithmatex">\[\begin{equation}
 I_y(t) = \Delta \omega I_x(t)
-\]</div>
+\end{equation}\]</div>
 <p>Solving the system of equation, we have then</p>
-<div class="arithmatex">\[
+<div class="arithmatex">\[\begin{equation}
 I_x(t) = I_x\cos\Delta \omega t + I_y\sin\Delta \omega t
-\]</div>
-<div class="arithmatex">\[
+\end{equation}\]</div>
+<div class="arithmatex">\[\begin{equation}
 I_y(t) = I_x\cos\Delta \omega t - I_y\sin\Delta \omega t
-\]</div>
+\end{equation}\]</div>
 <h2 id="3-the-hahn-echo-spin-echo">3. The Hahn echo (spin echo)<a class="headerlink" href="#3-the-hahn-echo-spin-echo" title="Permanent link">&para;</a></h2>
 <h3 id="31-the-sequence">3.1 The sequence<a class="headerlink" href="#31-the-sequence" title="Permanent link">&para;</a></h3>
 <p>Now that we know how to compute the evolution of our spin operators we should introduce the simplest case of a spin echo. The Hahn echo sequence is</p>
-<div class="arithmatex">\[
+<div class="arithmatex">\[\begin{equation}
 90^\circ_y\;-\;\tau\;-\;180^\circ_x\;-\;\tau\;-\;\text{detect}.
-\]</div>
+\end{equation}\]</div>
 <p>It produces a refocused signal (an echo) at time <span class="arithmatex">\(t=2\tau\)</span> after the first pulse.</p>
 <h3 id="32-pulse-action-as-rotations">3.2 Pulse action as rotations<a class="headerlink" href="#32-pulse-action-as-rotations" title="Permanent link">&para;</a></h3>
 <p>A hard pulse is modeled as an instantaneous rotation, experimentally, that is not always the case, but for theoretical purpose we can represent like this</p>
-<div class="arithmatex">\[
+<div class="arithmatex">\[\begin{equation}
 R_\alpha(\theta)=e^{-i\theta I_\alpha},\qquad \alpha\in\{x,y,z\}.
-\]</div>
+\end{equation}\]</div>
 <p>It transforms operators by conjugation: <span class="arithmatex">\(A\mapsto R_\alpha(\theta)\,A\,R_\alpha^\dagger(\theta)\)</span>.</p>
 <p>The pulse identities used below are: <br/>
 - <span class="arithmatex">\(90^\circ_y\)</span>: <span class="arithmatex">\(I_z \to I_x\)</span>.<br/>
@@ -1392,41 +1392,41 @@ R_\alpha(\theta)=e^{-i\theta I_\alpha},\qquad \alpha\in\{x,y,z\}.
 <p>We omit finite pulse duration, RF inhomogeneity, and off-resonance during pulses for simplicity and these omissions shall be addressed later.
 From that point of view, we can do a step-by-step derivation  (density operator evolution)</p>
 <p>Start:</p>
-<div class="arithmatex">\[
+<div class="arithmatex">\[\begin{equation}
 \rho_0 \propto I_z.
-\]</div>
+\end{equation}\]</div>
 <p><strong>Step 1 — Apply <span class="arithmatex">\(90^\circ_y\)</span> (create transverse magnetization)</strong></p>
-<div class="arithmatex">\[
+<div class="arithmatex">\[\begin{equation}
 \rho_1 \propto R_y(\pi/2)\,I_z\,R_y^\dagger(\pi/2)=I_x.
-\]</div>
+\end{equation}\]</div>
 <p><strong>Step 2 — Free evolution for <span class="arithmatex">\(\tau\)</span> (dephasing)</strong></p>
-<div class="arithmatex">\[
+<div class="arithmatex">\[\begin{equation}
 \rho_2 \propto U(\tau)\,I_x\,U^\dagger(\tau)=I_x\cos\phi + I_y\sin\phi,
 \qquad \phi=\Delta\omega\tau.
-\]</div>
+\end{equation}\]</div>
 <p>Interpretation: different isochromats have different <span class="arithmatex">\(\Delta\omega\)</span>, hence different <span class="arithmatex">\(\phi\)</span>, so the ensemble average of the transverse magnetization decays (FID).</p>
 <p><strong>Step 3 — Apply <span class="arithmatex">\(180^\circ_x\)</span> (invert transverse phase dispersion)</strong>
 Using <span class="arithmatex">\(I_x\to I_x\)</span> and <span class="arithmatex">\(I_y\to -I_y\)</span>:</p>
-<div class="arithmatex">\[
+<div class="arithmatex">\[\begin{equation}
 \rho_3 \propto I_x\cos\phi - I_y\sin\phi.
-\]</div>
+\end{equation}\]</div>
 <p><strong>Step 4 — Free evolution for <span class="arithmatex">\(\tau\)</span> (rephasing)</strong></p>
 <p>Now propagate each term by another <span class="arithmatex">\(\tau\)</span>:</p>
-<div class="arithmatex">\[
+<div class="arithmatex">\[\begin{equation}
 \rho_4 \propto U(\tau)\,\rho_3\,U^\dagger(\tau)
 = \cos\phi\,U(\tau)I_xU^\dagger(\tau) - \sin\phi\,U(\tau)I_yU^\dagger(\tau).
-\]</div>
+\end{equation}\]</div>
 <p>Insert the rotation identities:</p>
-<div class="arithmatex">\[
+<div class="arithmatex">\[\begin{equation}
 \rho_4 \propto \cos\phi\,(I_x\cos\phi + I_y\sin\phi)\;-\;\sin\phi\,(I_y\cos\phi - I_x\sin\phi).
-\]</div>
+\end{equation}\]</div>
 <p>Collect <span class="arithmatex">\(I_x\)</span> and <span class="arithmatex">\(I_y\)</span> terms:<br/>
 - <span class="arithmatex">\(I_x\)</span>: <span class="arithmatex">\(\cos^2\phi + \sin^2\phi = 1\)</span>,<br/>
 - <span class="arithmatex">\(I_y\)</span>: <span class="arithmatex">\(\cos\phi\sin\phi - \sin\phi\cos\phi = 0\)</span>.<br/></p>
 <p>Therefore:</p>
-<div class="arithmatex">\[
+<div class="arithmatex">\[\begin{equation}
 \boxed{\rho_4 \propto I_x,}
-\]</div>
+\end{equation}\]</div>
 <p><strong>independent of</strong> <span class="arithmatex">\(\Delta\omega\)</span>.</p>
 <hr />
 <h3 id="34-why-this-is-an-echo">3.4 Why this is an echo<a class="headerlink" href="#34-why-this-is-an-echo" title="Permanent link">&para;</a></h3>
@@ -1442,9 +1442,9 @@ Using <span class="arithmatex">\(I_x\to I_x\)</span> and <span class="arithmatex
 <p>Often in a experiment we tend to use repetition of the echo. One usual repetition was apply by Carr-Purcell-Meiboom-Gill (CPMG)<br/></p>
 <h2 id="4-from-hahn-echo-to-cpmg-echo-trains">4. From Hahn echo to CPMG: echo trains<a class="headerlink" href="#4-from-hahn-echo-to-cpmg-echo-trains" title="Permanent link">&para;</a></h2>
 <p>A canonical CPMG train is:</p>
-<div class="arithmatex">\[
+<div class="arithmatex">\[\begin{equation}
 90^\circ_{y}\;-\;\tau\;-\;\big[180^\circ_{x}\;-\;2\tau\big]_{N}\;-\;\text{acquire echoes}.
-\]</div>
+\end{equation}\]</div>
 <p>Echo maxima appear at <span class="arithmatex">\(t=2\tau,\,4\tau,\,6\tau,\dots\)</span> after the first pulse (depending on the precise timing convention).</p>
 <h3 id="42-why-an-echo-train-helps">4.2 Why an echo train helps<a class="headerlink" href="#42-why-an-echo-train-helps" title="Permanent link">&para;</a></h3>
 <p>Echo trains provide:<br/>
@@ -1464,6 +1464,7 @@ Using <span class="arithmatex">\(I_x\to I_x\)</span> and <span class="arithmatex
 </li>
 </ol>
 <hr />
+<p><strong>Contamination</strong> means: some <span class="arithmatex">\(\rho^{(m)}(t)\)</span> are generated by <em>unintended</em> pathways, but they still contribute to the same transverse observables <span class="arithmatex">\(I_x, I_y\)</span> at the echo times. They can therefore distort echo amplitudes, phases, and decays.</p>
 <div class="admonition tip">
 <p class="admonition-title">What should be our next lecture?</p>
 <p>Go to our github repository and upload your suggestion there. Any suggestion will be deeply appreciated.</p>
