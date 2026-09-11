@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1284,15 +1284,15 @@ Clean previous build </p>
 <div class="admonition warning">
 <p class="admonition-title">DL_MG=None</p>
 <p>In this setup, we were not able install dl_mg module. We have tried several times and the following error kept being thrown out during make statement.Error:
-<div class="highlight"><pre><span></span><code>/usr/bin/ld: /home/numsim/CASTEP/CASTEP-25.12/obj/linux_x86_64_gfortran10--mpi/build/../../../Source/Functional/multigrid_dlmg.f90:444:(.text+0x146db): undefined reference to __dl_mg_MOD_dl_mg_error_string&#39; collect2: error: ld returned 1 exit status make[1]: *** [Makefile:220: ../castep.mpi] Error 1 rm f90wrap_stub.anc make[1]: Leaving directory &#39;/home/numsim/CASTEP/CASTEP-25.12/obj/linux_x86_64_gfortran10--mpi/build&#39; make: *** [make.inc:236: castep] Error 2
+<div class="highlight"><pre><span></span><code>/usr/bin/ld: /home/numsim/CASTEP/CASTEP-25.12/obj/linux_x86_64_gfortran10--mpi/build/../../../Source/Functional/multigrid_dlmg.f90:444:(.text+0x146db): undefined reference to __dl_mg_MOD_dl_mg_error_string' collect2: error: ld returned 1 exit status make[1]: *** [Makefile:220: ../castep.mpi] Error 1 rm f90wrap_stub.anc make[1]: Leaving directory '/home/numsim/CASTEP/CASTEP-25.12/obj/linux_x86_64_gfortran10--mpi/build' make: *** [make.inc:236: castep] Error 2
 </code></pre></div></p>
 </div>
 <p>As a solution we have chosen the following command:
 <div class="highlight"><pre><span></span><code>make<span class="w"> </span>-j<span class="k">$(</span>nproc<span class="k">)</span><span class="w"> </span><span class="nv">COMMS_ARCH</span><span class="o">=</span>mpi<span class="w"> </span><span class="nv">DL_MG</span><span class="o">=</span>none<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span><span class="nv">MATHLIBS</span><span class="o">=</span>mkl<span class="w"> </span><span class="nv">MATHLIBDIR</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$MKL_LIB</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">  </span><span class="nv">FFT</span><span class="o">=</span>mkl<span class="w"> </span><span class="nv">FFTLIBDIR</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$MKL_LIB</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">  </span><span class="nv">EXTRA_LIBS</span><span class="o">=</span><span class="s2">&quot;-Wl,--start-group -lmkl_intel_lp64 -lmkl_gnu_thread -lmkl_core -Wl,--end-group -lsymspg -lgomp -lpthread -lm -ldl&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">  </span><span class="nv">LDFLAGS</span><span class="o">=</span><span class="s2">&quot;-L</span><span class="nv">$MKL_LIB</span><span class="s2"> -Wl,--no-as-needed -Wl,-rpath,</span><span class="nv">$MKL_LIB</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="nv">MATHLIBS</span><span class="o">=</span>mkl<span class="w"> </span><span class="nv">MATHLIBDIR</span><span class="o">=</span><span class="s2">"</span><span class="nv">$MKL_LIB</span><span class="s2">"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="nv">FFT</span><span class="o">=</span>mkl<span class="w"> </span><span class="nv">FFTLIBDIR</span><span class="o">=</span><span class="s2">"</span><span class="nv">$MKL_LIB</span><span class="s2">"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="nv">EXTRA_LIBS</span><span class="o">=</span><span class="s2">"-Wl,--start-group -lmkl_intel_lp64 -lmkl_gnu_thread -lmkl_core -Wl,--end-group -lsymspg -lgomp -lpthread -lm -ldl"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="nv">LDFLAGS</span><span class="o">=</span><span class="s2">"-L</span><span class="nv">$MKL_LIB</span><span class="s2"> -Wl,--no-as-needed -Wl,-rpath,</span><span class="nv">$MKL_LIB</span><span class="s2">"</span><span class="w"> </span><span class="se">\</span>
 <span class="w">  </span><span class="nv">BUILD</span><span class="o">=</span>fast<span class="w"> </span><span class="nv">TARGETCPU</span><span class="o">=</span>host
 </code></pre></div>
 then install:
@@ -1300,7 +1300,7 @@ then install:
 </code></pre></div></p>
 <h2 id="verifying-installation">Verifying installation<a class="headerlink" href="#verifying-installation" title="Permanent link">&para;</a></h2>
 <p>Check that the binary links against MKL and spglib:
-<div class="highlight"><pre><span></span><code>ldd<span class="w"> </span>bin/linux_x86_64_gfortran10--mpi/castep.mpi<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s2">&quot;mkl|symspg&quot;</span>
+<div class="highlight"><pre><span></span><code>ldd<span class="w"> </span>bin/linux_x86_64_gfortran10--mpi/castep.mpi<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s2">"mkl|symspg"</span>
 </code></pre></div>
 Run version header check:
 <div class="highlight"><pre><span></span><code>mpirun<span class="w"> </span>-np<span class="w"> </span><span class="m">4</span><span class="w"> </span>bin/linux_x86_64_gfortran10--mpi/castep.mpi<span class="w"> </span>--version
@@ -1308,13 +1308,13 @@ Run version header check:
 Expected: MKL and OpenMPI are listed.</p>
 <h2 id="wrapper-script">Wrapper Script<a class="headerlink" href="#wrapper-script" title="Permanent link">&para;</a></h2>
 <p>To run only commadn castep-mpi as default
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>bash<span class="w"> </span>-lc<span class="w"> </span><span class="s1">&#39;cat &gt; /usr/local/bin/castep-mpi &lt;&lt; &quot;EOF&quot;</span>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>bash<span class="w"> </span>-lc<span class="w"> </span><span class="s1">'cat &gt; /usr/local/bin/castep-mpi &lt;&lt; "EOF"</span>
 <span class="s1">#!/bin/bash</span>
 <span class="s1"># Usage: castep-mpi &lt;nprocs&gt; &lt;seed&gt; [args...]</span>
-<span class="s1">NPROCS=&quot;$1&quot;; SEED=&quot;$2&quot;; shift 2</span>
-<span class="s1">mpirun -np &quot;$NPROCS&quot; --bind-to core &quot;$HOME/CASTEP/CASTEP-25.12/bin/linux_x86_64_gfortran10--mpi/castep.mpi&quot; &quot;$SEED&quot; &quot;$@&quot;</span>
+<span class="s1">NPROCS="$1"; SEED="$2"; shift 2</span>
+<span class="s1">mpirun -np "$NPROCS" --bind-to core "$HOME/CASTEP/CASTEP-25.12/bin/linux_x86_64_gfortran10--mpi/castep.mpi" "$SEED" "$@"</span>
 <span class="s1">EOF</span>
-<span class="s1">chmod +x /usr/local/bin/castep-mpi&#39;</span>
+<span class="s1">chmod +x /usr/local/bin/castep-mpi'</span>
 </code></pre></div>
 Now you run jobs with:
 <div class="highlight"><pre><span></span><code>castep-mpi<span class="w"> </span><span class="m">24</span><span class="w"> </span>si
@@ -1410,7 +1410,7 @@ Now you run jobs with:
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "search.suggest", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
