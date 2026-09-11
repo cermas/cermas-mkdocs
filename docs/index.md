@@ -1,197 +1,121 @@
-# Contributing to These Docs
+# CERMAS
 
-This page explains how to propose changes to the documentation. If you are fixing a typo or a short paragraph, use **“Edit this page”** in the header. For substantial edits (new pages, images, navigation changes), follow the local workflow below.
+## Magnetic resonance, materials science, and shared research resources
 
-> We **do not** use versioned deployments (no `mike`). Maintainers publish a single latest site with `mkdocs gh-deploy`.
+CERMAS is a research environment at the **São Carlos Institute of Physics (IFSC), University of São Paulo (USP)**, coordinated by **Prof. Marcos de Oliveira Júnior** and **Prof. Henrik Bradtmüller**. Our work lies at the interface of physics, chemistry, and materials science, with a particular emphasis on understanding the **atomic-scale structure of disordered and functional materials**.
 
----
+We combine magnetic-resonance methods with complementary experiments and computational approaches to connect local structure, dynamics, and macroscopic properties. This website also serves as a shared home for **tutorials, lecture material, computational workflows, and laboratory resources** developed within the group.
 
-## Small edits in the browser (fastest)
+<div class="grid cards" markdown>
 
-1. Click **Edit this page** on the top-right.
-2. GitHub will fork the repository to your account if needed.
-3. Make your Markdown changes.
-4. Click **Propose changes** → **Create pull request (PR)**.
-5. A maintainer will review and merge.
+-   :material-magnet-on:{ .lg .middle } **Magnetic Resonance**
 
-!!! tip
-    Use this path for quick fixes. For images, new pages, or previewing layout/MathJax, use the local workflow.
+    ---
 
----
+    Solid-state NMR, electron paramagnetic resonance (EPR), dynamic nuclear polarization (DNP), and the development and application of advanced magnetic-resonance methods.
 
-## Full local workflow (≈5 minutes)
+-   :material-flask-outline:{ .lg .middle } **Disordered & Functional Materials**
 
-### 1) Fork and clone
+    ---
 
-- Repository: <https://github.com/cermas/cermas-mkdocs>
-- Click **Fork**, then clone **your fork**:
-  ```bash
-  git clone https://github.com/<your-username>/cermas-mkdocs.git
-  cd cermas-mkdocs
-  git remote add upstream https://github.com/cermas/cermas-mkdocs.git
-  ```
+    Glasses, glass-ceramics, xerogels, metal-organic and hybrid materials, ion-conducting systems, and other structurally complex solids.
 
-### 2) Create a virtual environment (Python 3.12.3)
+-   :material-atom:{ .lg .middle } **Structure–Property Relationships**
 
-=== "macOS / Linux"
-    ```bash
-    python3 -m venv .venv
-    source .venv/bin/activate
-    python --version          # expect 3.12.3
-    pip install --upgrade pip
-    pip install mkdocs-material
-    ```
+    ---
 
-=== "Windows (PowerShell)"
-    ```powershell
-    py -3.12 -m venv .venv
-    .\.venv\Scripts\Activate.ps1
-    python --version          # expect 3.12.3
-    python -m pip install --upgrade pip
-    pip install mkdocs-material
-    ```
+    Atomic-scale structural characterization combined with diffraction, spectroscopy, physical-property measurements, and molecular simulations.
 
-!!! note
-    Dependencies are intentionally minimal. Any extra plugins required by the site are declared in `mkdocs.yml`.
+-   :material-school-outline:{ .lg .middle } **Open Research Resources**
 
-### 3) Run a live preview
+    ---
 
-```bash
-mkdocs serve
-```
+    Practical documentation for students and researchers, including NMR lectures, DFT workflows, SIMPSON simulations, and laboratory tutorials.
 
-Open <http://127.0.0.1:8000>. The site reloads automatically when you save files.
-
-### 4) Add or edit content
-
-- **Where to put files**
-  - Pages: place Markdown under `docs/` (use folders to organize).
-  - Images/figures: `docs/assets/` and reference as `![caption](assets/my-figure.png)`.
-
-- **Math (MathJax via Arithmatex)**
-  - Inline: `$\omega_c t$`
-  - Display:
-    ```latex
-    $$
-    \mathcal{Z}(\beta) = \mathrm{Tr}\, e^{-\beta \hat H}
-    $$
-    ```
-
-- **Admonitions**
-  ```markdown
-  !!! tip "Quick tip"
-      Use `mkdocs serve` while writing so you can see live changes.
-  ```
-
-- **Tabbed content**
-  ```markdown
-  === "Python"
-  ```python
-  print("hello")
-  ```
-  === "Bash"
-  ```bash
-  echo hello
-  ```
-  ```
-
-- **Code blocks**
-  Use language hints for syntax highlighting: ```python, ```bash, ```yaml, etc.
-
-### 5) Update the navigation
-
-Add your new page to `mkdocs.yml` under `nav:` so it appears in the sidebar:
-
-```yaml
-nav:
-  - Home: index.md
-  - DFT:
-      - DFT Overview: DFT/DFT.md
-      - New Tutorial: DFT/new-tutorial.md
-```
-
-!!! warning
-    YAML is whitespace-sensitive. Use two spaces for indentation. Ensure file paths match exactly.
-
-### 6) Validate locally (recommended)
-
-```bash
-mkdocs build --strict
-```
-
-This flags broken links, missing images, and undefined nav entries.
-
-### 7) Commit and open a Pull Request
-
-```bash
-git checkout -b docs/<short-topic>
-git add -A
-git commit -m "docs: add <short-topic> tutorial"
-git push origin docs/<short-topic>
-```
-
-Then open a PR on GitHub from your branch into `cermas:main`.
+</div>
 
 ---
 
-## Writing guidelines
+## Research at CERMAS
 
-- **Headings:** one `#` title per page, then `##`, `###`, …
-- **Tone:** clear, concise, instructional. Prefer task-oriented sections (“Install…”, “Run…”, “Interpret…”).
-- **Filenames:** lowercase with hyphens, e.g. `installation-aocl.md`. Avoid spaces in filenames.
-- **Links:** prefer relative links, e.g. `[CASTEP runner](../DFT/Python%20Runner.md)`.
-- **Images:** keep ≤ 1600 px wide, compressed; place under `docs/assets/`.
-- **Code:** runnable, minimal, and consistent with current instructions.
-- **References:** when citing literature, include a short context sentence and a link.
+Our research is centered on the idea that understanding a material requires more than identifying its average composition or crystalline phases. In glasses and other disordered solids, technologically important properties often depend on **local coordination environments, connectivity, spatial proximities, and structural heterogeneity** that are difficult to access with conventional diffraction alone.
 
----
+Magnetic resonance provides a particularly powerful route to this information. At CERMAS, it is used both as a central characterization tool and as a platform for methodological development. Depending on the problem, these experiments are complemented by computational modeling and other structural and physicochemical techniques.
 
-## How we deploy (maintainers)
+### Main research directions
 
-We publish the **latest** site with **GitHub Pages** using MkDocs’ built-in deploy command.
-
-### First-time setup (one-time in the repo)
-
-1. Ensure Pages is enabled: **Settings → Pages**.
-2. Source: **Deploy from a branch**, pick the `gh-pages` branch after first deploy.
-
-### Regular deployment (after PRs are merged)
-
-```bash
-mkdocs gh-deploy --force
-```
-
-- This builds the site and pushes to the `gh-pages` branch.
-- The site is served at the URL configured in `site_url` (e.g., `https://cermas.github.io/cermas-mkdocs/`).
-- If the site doesn’t update, clear the browser cache or re-run with `--clean`:
-  ```bash
-  mkdocs gh-deploy --force --clean
-  ```
-
-!!! info
-    We do not keep multiple hosted versions. If you want to reference historical states, use **git tags** and a `CHANGELOG.md` page.
+- **Advanced solid-state NMR spectroscopy** — multinuclear MAS NMR and homo- and heteronuclear correlation and dipolar-recoupling approaches for resolving local structure and atomic connectivities.
+- **Glasses and glass-ceramics** — with particular interest in silicate, phosphate, borate and related networks; bioactive and functional glasses; niobium-containing materials; ion-conducting systems; crystallization; and ion-exchange processes.
+- **Functional amorphous and hybrid materials** — including xerogels and metal-organic systems, investigated using solid-state NMR and complementary magnetic-resonance methods.
+- **EPR and DNP** — continuous-wave and pulsed electron paramagnetic resonance and dynamic nuclear polarization for obtaining structural and dynamical information not readily accessible by NMR alone.
+- **Experiment–simulation integration** — combining spectroscopic constraints with molecular simulations and computational chemistry to obtain more complete structural models and establish quantitative structure–property relationships.
 
 ---
 
-## Troubleshooting
+## Principal investigators
 
-??? note "The site does not update when I add a page"
-    - Ensure you **added the file to `nav:`** in `mkdocs.yml` and that the path is correct.
-    - Run `mkdocs build --strict` to surface errors.
+### Marcos de Oliveira Júnior
 
-??? note "`mkdocs: command not found`"
-    - Activate the virtual environment first.
-    - Verify installation: `pip show mkdocs-material`.
+Professor at IFSC-USP working on **magnetic-resonance spectroscopy of amorphous and functional materials**. His research includes solid-state NMR, continuous-wave and pulsed EPR, and dynamic nuclear polarization, with applications to glasses, xerogels, metal-organic compounds, and related functional systems.
 
-??? note "Port 8000 already in use"
-    - Stop the previous server or run `mkdocs serve -a 127.0.0.1:8001`.
+[:material-account: IFSC profile](https://www2.ifsc.usp.br/portal-ifsc/pagina-pessoal-docente/?codigo=7278){ .md-button }
 
-??? note "Math is not rendering"
-    - Use `$$ ... $$` for display math and `$ ... $` inline.
-    - Do not indent math blocks unless they are inside a fenced code block.
+### Henrik Bradtmüller
+
+Professor at IFSC-USP working on **atomic-scale structure and rational development of inorganic glasses and glass-ceramics**. His research combines advanced multinuclear solid-state NMR with materials synthesis, physicochemical characterization, diffraction, and molecular-dynamics simulations, with particular interests in bioactive and functional glasses, phosphate and silicate networks, niobium-containing materials, and ion-conducting systems.
+
+[:material-account: IFSC profile](https://www2.ifsc.usp.br/portal-ifsc/pagina-pessoal-docente/?codigo=7315){ .md-button }
+[:material-web: Personal research page](https://hbrmn.github.io/){ .md-button }
 
 ---
 
-## Thank you
+## Research and teaching resources
 
-Every contribution helps. If you are unsure about scope or placement, open a **Draft PR** and ask for feedback.
+This site collects working material that we use in research, teaching, and student training. The emphasis is on documentation that is **practical, reproducible, and reusable**.
+
+<div class="grid cards" markdown>
+
+-   :material-function-variant:{ .lg .middle } **DFT**
+
+    ---
+
+    Installation notes and computational workflows for density-functional-theory calculations.
+
+    [:octicons-arrow-right-24: DFT resources](DFT/DFT.md)
+
+-   :material-chart-bell-curve:{ .lg .middle } **SIMPSON**
+
+    ---
+
+    Resources for spin-dynamics simulations and magnetic-resonance calculations.
+
+    [:octicons-arrow-right-24: SIMPSON resources](SIMPSON/SIMPSON.md)
+
+-   :material-presentation:{ .lg .middle } **NMR Lectures**
+
+    ---
+
+    Lecture material covering concepts and tools used in magnetic-resonance spectroscopy.
+
+    [:octicons-arrow-right-24: NMR lectures](NMR%20Lectures/lecture_1.md)
+
+-   :material-tools:{ .lg .middle } **Lab Tutorials**
+
+    ---
+
+    Practical procedures and troubleshooting notes for laboratory work and instrumentation.
+
+    [:octicons-arrow-right-24: Lab tutorials](Lab%20Tutorials/01_loss_user_configuration.md)
+
+</div>
+
+---
+
+## Students, collaborators, and visitors
+
+CERMAS is intended as a collaborative environment for researchers interested in magnetic resonance and materials science. Our projects frequently connect **spectroscopy, glass science, synthesis, computation, and complementary structural characterization**, and many benefit from collaborations across disciplinary and institutional boundaries.
+
+Students joining the group are trained not only in the operation of experimental or computational tools, but also in how to formulate structural questions, design appropriate experiments, critically evaluate models, and communicate reproducible research. The resources collected on this website form part of that training environment.
+
+!!! info "About this website"
+    These pages are maintained as a living collection of CERMAS research and teaching resources. Technical sections may be updated as software, instrumentation, and laboratory procedures evolve.
